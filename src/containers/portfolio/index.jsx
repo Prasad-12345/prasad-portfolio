@@ -3,18 +3,24 @@ import PageHeaderContent from '../../components/pageHeaderContent'
 import { BsInfoCircleFill } from 'react-icons/bs'
 import YouTube from '../../images/YouTube-Logosu.jpg'
 import Swiggy from '../../images/swiggy-1024x731.jpg'
+import devTinder from '../../images/download.png'
 import './style.scss'
 
 const portfolioData = [
+  // {
+  //   name : "Food Order",
+  //   image : Swiggy,
+  //   link : ''
+  // },
+  // {
+  //   name : "Video Streaming Platform",
+  //   image : YouTube,
+  //   link : ''
+  // }
   {
-    name : "Food Order",
-    image : Swiggy,
-    link : ''
-  },
-  {
-    name : "Video Streaming Platform",
-    image : YouTube,
-    link : ''
+    name : "DevTinder",
+    image : devTinder,
+    link : 'https://dev-tinder-web-2c4g.onrender.com/'
   }
 ]
 
@@ -47,7 +53,7 @@ function Portfolio() {
                     index === hoveredValue && (
                       <div className=''>
                         <p>{item.name}</p>
-                        <button>Visit</button>
+                        <button onClick={() => window.location.href = item.link}>Visit</button>
                       </div>
                     )
                   }

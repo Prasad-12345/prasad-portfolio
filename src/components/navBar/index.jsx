@@ -38,6 +38,10 @@ function NavBar() {
     setToggleIcon(!toggleIcon)
   }
 
+  const handleSideBarItemClick = () => {
+    setToggleIcon(!toggleIcon)
+  }
+
   return (
     <div>
       <nav className='navbar'> 
@@ -49,7 +53,7 @@ function NavBar() {
         <ul className={`navbar_container_menu ${toggleIcon ? 'active' : ''}`}>
           {data.map((item, key) => (
             <li key={key} className='navbar_container_menu_item'>
-              <Link to={item.to} className='navbar_container_menu_links'>
+              <Link to={item.to} className='navbar_container_menu_links' onClick={handleSideBarItemClick}>
                 {item.label}
               </Link>
             </li>
