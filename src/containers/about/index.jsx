@@ -2,7 +2,7 @@ import React from 'react'
 import { BsInfoCircleFill } from 'react-icons/bs'
 import PageHeaderContent from '../../components/pageHeaderContent'
 import './style.scss'
-import { SiLaravel, SiReact, SiMysql, SiPostman } from 'react-icons/si';
+import { SiNodedotjs, SiReact, SiMysql, SiPostman } from 'react-icons/si';
 
 const personalDetails = [
   {
@@ -19,7 +19,7 @@ const personalDetails = [
   }
 ]
 
-const jobSummary = "Full Stack Developer with 2.8 years of hands-on experience in React.js and Laravel. Skilled in building scalable, efficient, and user-centric web applications. Known for quick learning, strong problem-solving abilities, and a proactive approach to development challenges. Passionate about leveraging modern technologies to drive both personal growth and organizational success. Always eager to explore and adopt new tools and frameworks to enhance productivity and performance.";
+const jobSummary = "Full Stack Developer with 3.6 years of hands-on experience in React.js and Node.js. Skilled in building scalable, efficient, and user-centric web applications. Known for quick learning, strong problem-solving abilities, and a proactive approach to development challenges. Passionate about leveraging modern technologies to drive both personal growth and organizational success. Always eager to explore and adopt new tools and frameworks to enhance productivity and performance.";
 
 function About() {
   return (
@@ -47,7 +47,7 @@ function About() {
               <SiReact size={60} color='var(--yellow-theme-main-color)'/>
             </div>
             <div>
-              <SiLaravel size={60} color='var(--yellow-theme-main-color)'/>
+              <SiNodedotjs size={60} color='var(--yellow-theme-main-color)'/>
             </div>
             <div>
               <SiMysql size={60} color='var(--yellow-theme-main-color)'/>

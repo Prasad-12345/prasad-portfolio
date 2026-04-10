@@ -45,7 +45,11 @@ function Resume() {
                       {item.subTitle}
                     </h4>
                   </div>
-                  <p className='vertical_timeline_element_title_wrapper_description'>{item.description}</p>
+                  <p style={{textAlign:'left'}}>
+                    {item.description.length > 0 && item.description.map((desc) => (
+                    <p className='vertical_timeline_element_title_wrapper_description'>{desc}</p>
+                  ))}
+                  </p>
                 </VerticalTimelineElement>
               ))
             }
